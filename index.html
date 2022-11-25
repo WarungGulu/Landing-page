@@ -3,197 +3,189 @@
     <head>
       <meta charset="UTF-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Landing Page</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
       rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
       crossorigin="anonymous"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<!--=========================
+          Loading....
+===========================-->
+      <div id="loading">
+        <span class="loader"></span>
+        </div>
+    </div>
+<!--==============================
+                HEADER  
+==================================-->
+
+<header>
+  <div class="container-fluid" id="home">
+    <div class="row">
+      <div class="col-6 bawah">
+        <h1 class="tagline ms-lg-5">Selamat datang di <br/><span>Website Saya<span></h1>
+          <a href="#about" class="btn btn_header ms-lg-5" href="#">Learn More</a>
+      </div>
+      <div class="header-logo tengah">
+      <video autoplay loop muted playsinline>
+        <source src="icon/logo.mp4" type="video/mp4"/>
+    </div>
+  </div>   
+</header>
+
 <!--====================
         NAVBAR 
 ====================-->
-<nav class="navbar navbar-expand-lg ">
+<nav  class="navbar navbar-expand-lg bg-navbar" id="navbar">
   <div class="container-fluid ms-lg-5 me-lg-5">
-    <a class="navbar-brand text2" href="#">
+    <div class="navbar-brand text2" href="#home">
       <img src="icon/logo.png" alt="Logo"
-      class="navbar-logo">Arba'in Portofolio</a>
-    <button class="navbar-toggler text2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+            class="navbar-logo">Arba'in Portofolio
+    </div>
+    <button class="navbar-toggler text2" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item ms-2 mb-2">
-            <a class="btn btn-1" href="#about">About</a>
+            <a class="btn " href="#about">About</a>
           </li>
           <li class="nav-item ms-2 mb-2">
-            <a class="btn btn-1"href="#award">Award</a>
+            <a class="btn "href="#award">Award</a>
           </li>
           <li class="nav-item ms-2 mb-2">
-            <a class="btn btn-1"href="#experience">Experience</a>
+            <a class="btn "href="#experience">Experience</a>
           </li>
           <li class="nav-item ms-2 mb-2">
-            <a class="btn btn-1"href="#interest">Interest</a>
+            <a class="btn "href="#interest">Interest</a>
           </li>
           <li class="nav-item ms-2">
-            <a class="btn btn-1"href="#skills">Skills</a>
+            <a class="btn"href="#skills">Skills</a>
           </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
   </div>
 </nav>
-<!-- akhir navbar-->
-<!--==============================
-                HEADER  
-==================================-->
-<header>
-  <div class="container-fluid" id="home">
-    <div class="row ">
-      <div class="col-8 rata-kiri-medium">
-        <h1 class="tagline">Selamat datang di <span>Website Saya<span></h1>
-        <p>Terimakasih telah berkunjung di website saya,
-          mohon maaf apabila masih ada kekurangan dalam pembuatan tugas ini,
-          karena ini merupakan percobaan pertama saya dalam membuat Website</p>
-          <a href="#footer"><img src="icon/btn_next.png"></a>
-      </div>
-      <div class="col-4 header-logo" href="#">
-        <img classs="logo" src="icon/logo.png" alt=""></img>
-    </div>
-  </div>   
-</header>
-<div class="decoration"><p>About<p></div>
-<!--Akhir Header-->
 <!--===============
           ABOUT
   =================-->
-<article class="container-fluid" id="about">
+<article class="container-fluid mt-5" id="about">
+  <div class="text-judul">
   <h2><em>About</em>Me</h2></div>
   <div class="row2">
-    <div class="col-2">
-      <div class="card2" data-name="about">
+    <div class="col-5 me-5">
+      <div class="card2 " data-name="about">
         <div class="img-container">
-          <img src="icon/instagram.png" alt=""/>
+          <img src="icon/logo_bio.png" alt=""/>
         </div>
-        <h3>Arbain</h3>
+        <h3>Arba'in</h3>
         <p>Penerima Pelatihan </p>
-        <a class=" btn btn-2" href="#">Lihat Bio</a>
+        <a class="btn btn-bio" href="#home">Lihat Bio</a>
       </div>
       </div>
-    <div class="col-10 text-about">
+    <div class="col-5 text-isi ms-lg-5">
       <h1><span>Hallo</span> Lorem ipsum dolor sit amet consectetur 
         adipisicing elit. Cumque, aliquam ad doloribus dolore 
         perferendis velit a accusamus facere praesentium numquam!</h1>
-    </div>
-    <div class="decoration"><p>My Award<p></div>
-  </div>
-  <!--Akhir About-->
+    </div> 
+  </div><hr>
 <!--=============
         AWARD
   ===============-->
-<article class="container-fluid" id="award">
+<article class="container-fluid mt-5" id="award">
+  <div class="text-judul">
     <h2><em>My</em>Award</h2></div>
     <div class="gallery_container_parent">
       <div class="gallery_container">
-          <figure class="gallery_item item_1" onclick="openmodal();currentslide(1)">
+          <figure class="gallery_item item_1">
               <img src="image/img1.jpg" alt="img1_image">
-              <figcaption class="caption">Award 1<br><br> Tekan untuk Perbesar gambar<br> <i class="fas fa-search"></i> </figcaption>
+              <figcaption class="caption">Award 1<br></figcaption>
           </figure>
    
-          <figure class="gallery_item item_2" onclick="openmodal();currentslide(2)">
+          <figure class="gallery_item item_2">
               <img src="image/img2.jpg" alt="img2_image">
-              <figcaption class="caption">Award 2 <br><br> Tekan Untuk perbesar gambar <br> <i class="fas fa-search"></i> </figcaption>
+              <figcaption class="caption">Award 2 <br></figcaption>
           </figure>
    
-          <figure class="gallery_item item_3" onclick="openmodal();currentslide(3)">
+          <figure class="gallery_item item_3">
               <img src="image/img3.jpg" alt="img3_image">
-              <figcaption class="caption">Award 3 <br><br> Tekan untuk Perbesar gambar <br> <i class="fas fa-search"></i> </figcaption>
+              <figcaption class="caption">Award 3 <br></figcaption>
           </figure>
    
-          <figure class="gallery_item item_4" onclick="openmodal();currentslide(4)">
+          <figure class="gallery_item item_4">
               <img src="image/img4.jpg" alt="img4_image">
-              <figcaption class="caption">Award 4<br><br> Tekan untuk Perbesar gambar<br> <i class="fas fa-search"></i> </figcaption>
+              <figcaption class="caption">Award 4<br></figcaption>
           </figure>
       </div>
   </div>
-   
-  <!-- Ini Lightbox  -->
-  <div class="lightbox_container">
-      <i class="fas fa-times" id="close"></i>
-      <div class="parent_navigation">
-          <span class="prev" id="ripple">&#10094;</span>
-          <span class="next" id="ripple">&#10095;</span>
-      </div>
-
-      <figure class="lightbox_item">
-          <img src="image/img1.jpg" alt="img1_image">
-          <figcaption class="caption_lightbox">Ini Award 1</figcaption>
-      </figure>
-
-      <figure class="lightbox_item">
-          <img src="image/img2.jpg" alt="img2_image">
-          <figcaption class="caption_lightbox">Ini Award 2</figcaption>
-      </figure>
-
-      <figure class="lightbox_item">
-          <img src="image/img3.jpg" alt="img3_image">
-          <figcaption class="caption_lightbox">Ini Award 3</figcaption>
-      </figure>
-
-      <figure class="lightbox_item">
-          <img src="image/img4.jpg" alt="img4__image">
-          <figcaption class="caption_lightbox">Ini Award 4</figcaption>
-      </figure>
-</article>
-<!--akhir Award-->
-<div class="decoration"><p>Skills<p></div>
+  <hr>
 <!--====================
             SKILLS
   ======================-->
-<article class="container-fluid" id="skills">
-  <h3><em>Skill</em>'s</h3>
-  <div class="row warna-coklat mt-5">
-    <div class="col">
-  <div class="skillbox">
-      <p>HTML</p>
-      <p>50%</p>
-      <div class="skill_2">
-          <div class="skill_level_2" style="width: 50%"></div>
-      </div>
+<article class="container-fluid mt-5" id="skills">
+<div class="text-judul">
+<h2><em>Skill</em>'s</h2>
+  <div class="row mt-5">
+    <div class="col-5 text-isi rata-tengah">
+      <h1><span>Skills yang diharapkan bisa dimiliki setelah belajar teknik dasar HTML:</span></h1></br>
+      <div class="">
+      <em>
+        <i class="bi bi-bookmark-check-fill"></i> Memahami Dasar & Fundamental untuk menjadi seorang programmer website.<br/>
+        <i class="bi bi-bookmark-check-fill"></i> Memahami dan bisa meng-implementasikan pengembangan Dasar sebuah Website<br/>
+        <i class="bi bi-bookmark-check-fill"></i> Mengerti 1 cycle development Website<br/>
+        <i class="bi bi-bookmark-check-fill"></i> Melakukan deployment dan development website secara online<br/>
+        <i class="bi bi-bookmark-check-fill"></i> Membuat website yang berisi online portofolio<br/>
+        <i class="bi bi-bookmark-check-fill"></i> Memiliki manajemen waktu yang baik dan fokus untuk menyelesaikan tugas sebagai web developer<br/>
+        <i class="bi bi-bookmark-check-fill"></i> Dapat mengikuti standar yang diminta oleh client<br/>
+      </em>
+    </div>
   </div>
-  <div class="skillbox">
+    <div class="col-5 perbesar">
+      <div class="skillbox card2 lipat">
+        <p>HTML</p>
+        <p>50%</p>
+        <div class="skill_2">
+          <div class="skill_level_2" style="width: 50%">
+          </div>
+        </div>
+      </div>
+      <div class="skillbox card2 lipat">
       <p>PHP</p>
       <p>0%</p>
       <div class="skill">
           <div class="skill_level_0" style="width: 0%"></div>
       </div>
   </div>
-  <div class="skillbox">
+  <div class="skillbox card2 lipat">
       <p>Java</p>
       <p>20%</p>
       <div class="skill_1">
           <div class="skill_level_1" style="width: 20%"></div>
       </div>
   </div>
-  <div class="skillbox">
+  <div class="skillbox card2 lipat2">
       <p>SQL</p>
       <p>0%</p>
       <div class="skill mb-3">
           <div class="skill_level_0" style="width: 0%"></div>
   </div>
-</article>
-<!--akhir skills-->
-<div class="decoration"><p>Experience<p></div>
+</article><hr>
+
 <!--=========
   experience
   ==========-->
-<article class="container-fluid" id="experience">
+<article class="container-fluid mt-5" id="experience">
+<div class="text-judul">
   <div class="row mt-lg-3 mb-lg-3">
-      <h3><em>Expe</em>rience</h3>
-      <div class="text-experience mt-5">
+      <h2><em>Expe</em>rience</h2>
+      <div class="mt-5 text-light">
         <h1><span>Bercerita pengalaman</span> mungkin tidak akan ada habisnya
-          maka dari itu "berjalan lah terus kedepan sembari melihat apa yang pernah terjadi di belakang".
+          maka dari itu "berjalan lah terus kedepan sembari melihat apa yang pernah terjadi di belakang".<br/><br/>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab maxime animi, 
             accusantium tenetur nemo praesentium quo deserunt a quas ratione laborum aliquam mollitia 
             magnam iste nisi, veniam laboriosam accusamus odit. Enim, corrupti officia reprehenderit 
@@ -201,17 +193,16 @@
           </h1>
     </div>
   </div>
-</article>
-<!--akhir experience-->
-<div class="decoration"><p>Interest<p></div>
+</article><hr>
 <!--============
   interest
 =================-->
-<article class="container-fluid " id="interest">
-      <h3><em>Inte</em>rest</h3>
+<article class="container-fluid mt-5" id="interest">
+<div class="text-judul">
+      <h2><em>Inte</em>rest</h2>
       <div class="row2">
-      <div class="col-10 bg-dark">
-      <div class="text-experience text-light mt-5">
+      <div class="col-6">
+      <div class="text-isi me-3">
       <h1><span>Minat</span> dapat diartikan sebagai perasaan tertarik seseorang terhadap 
         sesuatu yang menimbulkan keinginan dan dorongan yang kuat untuk untuk 
         melakukan hal tersebut. Setiap orang pasti akan tumbuh dan berkembang 
@@ -219,22 +210,19 @@
         akan tumbuh secara alamiah berdasarkan pengaruh lingkungannya. Seseorang 
         yang mengembangkan minat atau hal yang disukainya secara tidak langsung 
         juga dapat menyalurkan bakat yang dimilikinya.</h1>
-      <a class="center " href="#home"><img src="icon/btn_next.png"></a>
     </div>
     </div>
-    <div class="col-2 bg-light">
-      <img class="img-fluid img1 img-thumbnail" src="image/img1.jpg" alt="">
+    <div class="col-6 img-interest">
+      <img class="img-fluid" src="image/img1.jpg" alt="">
     </div>
   </div>
-</article>
-<!--akhir interest-->
-<div class="decoration"><p>Penutup<p></div>
+</article><hr>
 <!--Footer-->
-<footer class="container-fluid pt-5" id="footer">
+<footer class="container-fluid" id="footer">
   <div class="row">
-    <div class="col-lg-6">
-      <h1 class="text-dark">Penutup</h1>
-      <p class="text-dark">Sekian Project Tugas Website dari saya kurang lebihnya saya minta maaf,Terima Kasih
+    <div class="col-lg-6 text-footer">
+      <h2><em>Penutup</em></h2><br/>
+      <p>Sekian Project Tugas Website dari saya kurang lebihnya saya minta maaf,Terima Kasih
       </p>
       <a href="https://facebook.com/login/?locale=id_ID&refsrc=deprecated" target="_blank">
          <img class="header-icon" src="icon/facebook.png" alt=""></a>
@@ -242,29 +230,14 @@
          <img class="header-icon ms-3 me-3" src="icon/twitter.png" alt=""></a>
       <a href="https://www.instagram.com/accounts/login/"target="_blank">
          <img class="header-icon" src="icon/instagram.png" alt=""></a>
-    </div>
-  <div class="col-lg-6 pt-5 pt-lg-0">
-    <h1 class="text-dark">Contact Me</h1>
-    <form>
-      <div class="mb-3 mr-250  ">
-        <input type="email" class="form-control " id="exampleFormControlInput1" 
-        placeholder="email:">
-      </div>
-      <div class="mb-3 mr-250">
-        <textarea class="form-control " id="exampleFormControlTextarea1"
-        rows="3" placeholder="message:"></textarea>
-      </div>
-      <div class="mb-3 mr-250 float-end">
-        <a href="https://www.whatsapp.com/?lang=id" class="btn btn3 ps-4 pe-4" target="_blank">send</a>
-      </div>
-    </form>
-  </div>
+    </div></div>
   <div class="col-md-6">
-    <div class="text-dark" margin-align=center>copyright © 2022 Arba'in</div>
+    <p>copyright © 2022 Arba'in</p>
 </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
       crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="script.js"></script>
     </body>
   </html>
