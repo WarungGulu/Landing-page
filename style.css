@@ -64,7 +64,7 @@ html,body{
 
 #navbar{
   background-color:#ffbb00;
-  box-shadow: 0 0 15px #2f312f;
+  box-shadow: 0px 5px #2f312f;
 }
 .navbar-logo{
   width: 50px;
@@ -379,6 +379,11 @@ html,body{
   height: 3vh;
   border-radius: 20px;
 }
+.skillbox .skill_level_3{
+  background: #01ccff;
+  height: 3vh;
+  border-radius: 20px;
+}
 .perbesar .card2:hover {
   transform: scale(1.15);
 }
@@ -626,7 +631,8 @@ html,body{
     font-size: 20px;
     margin-top: 2vh;
   }
-  .loader{
+  .navbar-nav a{
+    font-size: 10px;
 
   }
 }
